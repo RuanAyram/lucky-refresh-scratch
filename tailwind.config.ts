@@ -24,6 +24,7 @@ export default {
           secondary: "#1A1F2C",
           accent: "#ffd700",
         },
+        border: "hsl(var(--border) / <alpha-value>)",
       },
       keyframes: {
         'glow': {
