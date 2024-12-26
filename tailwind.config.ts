@@ -25,6 +25,8 @@ export default {
           accent: "#ffd700",
         },
         border: "hsl(var(--border) / <alpha-value>)",
+        background: "hsl(var(--background) / <alpha-value>)",
+        foreground: "hsl(var(--foreground) / <alpha-value>)",
       },
       keyframes: {
         'glow': {
