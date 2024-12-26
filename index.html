@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lucky-refresh-scratch</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
+    <title>Raspadinha da Sorte</title>
+    <meta name="description" content="Raspadinha da Sorte - Tente a sua sorte!" />
+    <link rel="stylesheet" href="/src/styles.css">
   </head>
-
   <body>
-    <div id="root"></div>
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="container">
+      <h1>Raspadinha da Sorte</h1>
+      <p class="instructions">Arraste o dedo ou mouse sobre o cartão para revelar seu prêmio!</p>
+      <div class="scratch-card-container">
+        <div id="prize-text" class="prize-text"></div>
+        <canvas id="scratch-card" width="300" height="150"></canvas>
+      </div>
+      <p class="refresh-text">Atualize a página para tentar novamente!</p>
+    </div>
+    <script src="/src/main.js"></script>
   </body>
 </html>

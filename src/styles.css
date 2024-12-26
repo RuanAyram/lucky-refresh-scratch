@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #9b87f5, #1A1F2C);
+  font-family: system-ui, -apple-system, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.instructions {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  max-width: 24rem;
+}
+
+.scratch-card-container {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.prize-text {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, #9b87f5, #1A1F2C);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+#scratch-card {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.refresh-text {
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(155, 135, 245, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(155, 135, 245, 0.8);
+  }
+}
